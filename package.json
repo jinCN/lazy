@@ -1,0 +1,48 @@
+{
+  "name": "@superjs/lazy",
+  "version": "1.0.0",
+  "description": "lazy object",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "author": "mr_jin <liang.jr@foxmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jinCN/lazy"
+  },
+  "keywords": [
+    "super",
+    "superjs",
+    "lazy",
+    "local variable",
+    "local",
+    "init",
+    "es7"
+  ],
+  "bugs": {
+    "url": "https://github.com/jinCN/cb/issues"
+  },
+  "homepage": "https://github.com/jinCN/cb#readme",
+  "scripts": {
+    "lint": "standard --fix | snazzy"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.13",
+    "snazzy": "^8.0.0",
+    "standard": "^14.3.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  }
+}
